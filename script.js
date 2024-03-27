@@ -1,16 +1,16 @@
 
 const numbersBtn = document.querySelector('.btn_numbers');
 const iconsBtn = document.querySelector('btn_icons');
-
+const startGameBtn = document.querySelector('.start')
 const playersNumber = document.querySelectorAll('.btn_player');
 
 const gridSize = document.querySelectorAll('btn_grid');
 
-const grid = document.querySelector('.game__board')
+const grid = document.querySelector('.board')
 
 // array for numbers 1 to 18 
-const numbersSmallArray = ['1', '2', '3', '4', '5', '6', '7', '8']
-const numbersBigArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']
+const numbersSmallArray = ['1', '2', '3', '4', '5', '6', '7', '8', '1', '2', '3', '4', '5', '6', '7', '8']
+const numbersBigArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']
 // create grid
 let cardChosen = [];
 let cardChosenId = [];
@@ -32,4 +32,5 @@ function createSmallBoard() {
         grid.appendChild(card);
     }
 }
+
 createSmallBoard();
