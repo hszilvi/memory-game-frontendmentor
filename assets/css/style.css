@@ -57,3 +57,6 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
+.single-player-board {
+    display: none;
+}
