@@ -109,11 +109,30 @@ gridSize.forEach(button => {
     });
 });
 // create players card
+const playersToDisplay = document.querySelector('.multiple-player-board');
 function createPlayersCards() {
     if (playerChosen === 1) {
-        document.getElementsByClassName('single-player-board').style.display = "block";
+        document.querySelector('.single-player-board').style.display = "block";
+    } else {
+        let numberOfCards = playerChosen;
+        for (let i = 0; i < numberOfCards; i++) {
+            const el = document.createElement('div');
+            el.className = "player-box";
+            el.innerHTML =
+            `
+            <p>Player ${i+1}</p>
+            <div class="scores">5</div>
+            `
+            playersToDisplay.appendChild(el);
+            console.log(el);
+        };
+
+
+
     }
+    // console.log(el);
 }
+
 
 // create game board
 function createSmallBoard() {
