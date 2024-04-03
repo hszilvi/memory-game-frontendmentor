@@ -19,23 +19,34 @@
     </div>
     <h2>Numbers of Players</h2>
     <div class="game players">
-      <button class="btn_player">1</button>
-      <button class="btn_player">2</button>
-      <button class="btn_player">3</button>
-      <button class="btn_player">4</button>
+      <button class="btn_player" id="player1">1</button>
+      <button class="btn_player" id="player2">2</button>
+      <button class="btn_player" id="player3">3</button>
+      <button class="btn_player" id="player4">4</button>
     </div>
     <h2>Grid Size</h2>
     <div class="game grids">
-      <button class="btn_grid btn_wide">4x4</button>  
-      <button class="btn_grid btn_wide">6x6</button>  
+      <button class="btn_grid btn_wide" id="grid4">4x4</button>  
+      <button class="btn_grid btn_wide" id="grid6">6x6</button>  
     </div>
     <button class="start">Start Game</button>
-
+  </div>
+  <div class="board-header">
+    <h2>Memory</h2>
+    <div class="restart">
+      <button class="restart-btn">Restart</button>
+      <button class="new-game-btn">New Game</button>
+    </div>
   </div>
   <div class="board">
   </div>
-  <div class="time">Time<br> <span class="timer"></span></div>
-  <div class="moves">Moves<br><span class="moves-num"></span> </div>
+  <div class="single-player-board" >
+    <div class="time">Time<br> <span class="timer"></span></div>
+    <div class="moves">Moves<br><span class="moves-num"></span> </div>
+  </div>
+  <div class="multiple-player-board">
+    Multiple players cards come here
+  </div>
 
   <script src="./script.js"></script>
 </body>
